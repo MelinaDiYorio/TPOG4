@@ -1,0 +1,32 @@
+
+.contenedor {
+    display: grid;
+    max-width: 960px;
+    margin: 100px auto;
+    grid-template-columns: 50% 50% (auto);
+    grid-template-rows: 4fr;
+    grid-template-areas:
+    "header" "header"
+    "contenido1" "contenido2" 
+    "abajo" "abajo"
+    "footer" "footer";
+    gap: 5%;
+
+}
+
+.contenedor .abajo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: justify;
+
+}
+
+.contenedor .contenido1 {
+    text-align: justify;
+    
+}
+
+.contenedor .contenido2 {
+    text-align: justify;
+    
+}
