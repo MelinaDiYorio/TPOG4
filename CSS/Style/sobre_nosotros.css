@@ -1,42 +1,45 @@
-.contenedor{
+/* .grid-container {
+    width: 800px;
     display: grid;
-    max-width: 120rem;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2,auto);
-    grid-template-areas: 
-    "header"
-    "main"
-    "bloque 1"
-    "bloque 2"
-    "footer";
-    margin-right: auto;
-    margin-left: auto;
-    gap: 2%;
-}
-.contenedor .header{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px;
+    align-content: center;
+    justify-content: center;
+    grid-gap: 10px;
+    background-color: blue;
+    padding: 10px;
+} */
+
+.contenedor .header {
     grid-area: header;
     background-image: url(../../HTML/img/240_F_590652631_XYduDmkbjJOyeeII2qzrUwHFtIU9ps89.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 40vh;
 }
 
-.contenedor .main{
+.contenedor .main {
     grid-area: main;
-    background-color: #d2b48c;
-    height: 40vh;
+    background-color: #e9e2a0;
+    height: 60vh;
 }
 
-.contenedor .bloque1{
+.contenedor .bloque1 {
     grid-area: bloque1;
-    background-color: #d2b48c;
-    color:black;
-    height: 15vh;
+    background-color: hsl(60, 70%, 70%);
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    height: 30vh;
 }
 
-.contenedor .bloque2{
+.contenedor .bloque2 {
     grid-area: bloque2;
-    background-color: #d2b48c;
-    color:black;
-    height: 15vh;
+    background-color: hsl(60, 70%, 70%);
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    height: 40vh;
 }
 
 .contenedor .footer {
