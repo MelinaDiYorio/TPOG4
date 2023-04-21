@@ -1,48 +1,52 @@
-/* .grid-container {
-    width: 800px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 200px;
-    align-content: center;
-    justify-content: center;
-    grid-gap: 10px;
-    background-color: blue;
-    padding: 10px;
-} */
+ .grid-container {
+     width: 800px;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: 200px 200px;
+     align-content: center;
+     justify-content: center;
+     grid-gap: 10px;
+     
+ }
 
-.contenedor .header {
-    grid-area: header;
-    background-image: url(../../HTML/img/240_F_590652631_XYduDmkbjJOyeeII2qzrUwHFtIU9ps89.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
-}
-
-.contenedor .main {
-    grid-area: main;
-    background-color: #e9e2a0;
-    height: 60vh;
-}
-
-.contenedor .bloque1 {
-    grid-area: bloque1;
-    background-color: hsl(60, 70%, 70%);
-    color: black;
+ h3 {
     text-align: center;
-    font-size: 20px;
-    height: 30vh;
-}
+  }
 
-.contenedor .bloque2 {
-    grid-area: bloque2;
-    background-color: hsl(60, 70%, 70%);
-    color: black;
-    text-align: center;
-    font-size: 20px;
-    height: 40vh;
-}
+ .contenedor .header {
+     grid-area: header;
+     background-image: url(../../HTML/img/240_F_590652631_XYduDmkbjJOyeeII2qzrUwHFtIU9ps89.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 40vh;
+ }
 
-.contenedor .footer {
-    grid-area: footer;
-    height: 10vh;
-}
+ .contenedor .main {
+     grid-area: main;
+     background-color: hsl(60, 70%, 70%);
+     height: 70vh;
+ }
+
+ .contenedor .bloque1 {
+     grid-area: bloque1;
+     background-color: hsl(60, 70%, 70%);
+     color: black;
+     text-align: justify;
+     font-size: 20px;
+     height: 25vh;
+     
+ }
+
+ .contenedor .bloque2 {
+     grid-area: bloque2;
+     background-color: hsl(60, 70%, 70%);
+     color: black;
+     text-align: initial;
+     font-size: 20px;
+     height: 52vh;
+ }
+
+ .contenedor .footer {
+     grid-area: footer;
+     height: 10vh;
+ }
