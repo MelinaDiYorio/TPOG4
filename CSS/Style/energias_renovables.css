@@ -1,0 +1,83 @@
+body {
+    background-color: olive;
+    background-image: url(../../HTML/img/fondo2.jpg);
+
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+      
+}
+
+.contenedor .bloque1,
+.contenedor .bloque2,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+    
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header {
+    background-color: coral;
+    height: 20px;
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.contenedor .contenido {
+    grid-column: span 2;
+    padding-top: 0%;
+    text-align: justify;
+    background-color: rgb(230, 223, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.contenedor .sidebar {
+    grid-column: 3 / 4;
+    background-color: rgb(255, 213, 106);
+    text-align: justify;
+    padding-top: 15%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    grid-row: span 2;
+}
+
+.contenedor .bloque1,
+.contenedor .bloque2 {
+    background-color: rgb(250, 152, 112);
+    height: 310px;
+    text-align: justify;
+}
+
+.contenedor .footer{
+    background-color: rgb(232, 154, 51);
+    height: 40px;
+    grid-column: span 3;
+}
+
+
