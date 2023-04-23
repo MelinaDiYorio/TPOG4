@@ -6,12 +6,12 @@
      align-content: center;
      justify-content: center;
      grid-gap: 10px;
-     
+
  }
 
  h3 {
-    text-align: center;
-  }
+     text-align: center;
+ }
 
  .contenedor .header {
      grid-area: header;
@@ -34,7 +34,9 @@
      text-align: justify;
      font-size: 20px;
      height: 25vh;
-     
+     padding-left: 5%;
+     padding-right: 5%;
+
  }
 
  .contenedor .bloque2 {
@@ -44,6 +46,9 @@
      text-align: initial;
      font-size: 20px;
      height: 52vh;
+     padding-left: 3%;
+     padding-right: 3%;
+
  }
 
  .contenedor .footer {
