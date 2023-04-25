@@ -1,18 +1,17 @@
 h2 {
     font-size: 22px;
     text-align: center;
-    font-family: 'DynaPuff', cursive;
+    font-family: 'Julius Sans One', sans-serif;
 
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(../../HTML/img/fondo\ claro\ 1.jpg)
-
 }
 
 fieldset {
-    
+
     font-weight: bold;
     border-radius: 2%;
     border-color: black;

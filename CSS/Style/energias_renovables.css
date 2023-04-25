@@ -1,15 +1,19 @@
 body {
     background-color: olive;
     background-image: url(../../HTML/img/fondo2.jpg);
+    font-family: 'Alkatra', cursive;
 
 }
 
 h2 {
     text-align: center;
+    font-family: 'Rubik Moonrocks', cursive;
+
 }
 
 h3 {
     text-align: center;
+
 }
 
 
@@ -21,7 +25,7 @@ h3 {
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
-      
+
 }
 
 .contenedor .bloque1,
@@ -30,7 +34,7 @@ h3 {
 .contenedor .contenido,
 .contenedor .sidebar,
 .contenedor .footer {
-    
+
     padding: 20px;
     border-radius: 4px;
 }
@@ -72,12 +76,11 @@ h3 {
     background-color: rgb(250, 152, 112);
     height: 310px;
     text-align: justify;
+    font-size: 14px;
 }
 
-.contenedor .footer{
+.contenedor .footer {
     background-color: rgb(232, 154, 51);
     height: 40px;
     grid-column: span 3;
 }
-
-
