@@ -35,7 +35,6 @@ h3 {
 
     padding: 20px;
     border-radius: 4px;
-    
 
 }
 
@@ -47,6 +46,14 @@ h3 {
     background-size: cover;
     color: black;
 
+}
+
+.contenedor .nav {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -68,11 +75,18 @@ h3 {
     text-align: justify;
     font-size: 20px;
     border-style: outset;
-   
+
 }
 
 .contenedor .footer {
     background-color: darkkhaki;
     height: 40px;
-
+    text-decoration: none;
+    border-style: 2px, solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 15px 25px;
+    
 }
