@@ -35,3 +35,7 @@ fieldset {
 .cajita {
     padding-bottom: 7%;
 }
+.regresar{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
