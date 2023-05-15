@@ -5,84 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Ecología">
     
     <link rel="icon" href="img/favicon.ico">
    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-
-    
     <link rel="stylesheet" href="../CSS/Style/formulario_contacto.css">
-
+    <link rel="icon" href="../HTML/img/favicon.ico">
     <title>Contacto</title>
 
 </head>
 
-<!-- !-- Crearse su propia cuenta en formspree.io para que lleguen los correos de los formularioa enviados a la casilla de la
-ONG-->
-<!-- <form action="https://formspree.io/f/mzbwblkq" method="POST"> -->
 
 <body>
 
-    <header></header>
+    <header>
 
-    <h2>Para realizar donaciones o si te interesa ser voluntario, por favor, ingresá tus datos en el siguiente
-        formulario y nos contactaremos con vos</h2>
+        <h2>Para realizar donaciones o si te interesa ser voluntario, por favor, ingresá tus datos en el siguiente
+            formulario y nos contactaremos con vos</h2>
+    </header>
 
-
-    <form action="mostrar_datos.html" target="_blank">
+    <form action="https://formspree.io/f/xjvdzoza" method="post" target="_blank">
 
         <fieldset>
             <legend>Datos personales</legend>
-            <div>
+            <div class="cajita">
                 <label for="nombre">Nombre:</label>
                 <input size="35" type="text" name:"nombre" placeholder="Ingrese su nombre aquí..." required>
-            </div>
-            <br>
-
-            <div>
                 <label for="apellido">Apellido:</label>
                 <input size="30" type="text" name:"apellido" placeholder="Ingrese su apellido aquí..." required>
             </div>
-            <br>
 
-            <div>
+            <div class="cajita">
                 <label for="dni">DNI:</label>
                 <input type="number" name:"dni" required>
-            </div>
-            <br>
-
-            <dix>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" name:"email" placeholder="email@hdominio.com" required>
-            </dix>
-            <br><br>
-
-            <div>
-                <label for="telefono">Telefono: </label><input type="tel" name="telefono"
-                    placeholder="Ingrese su telefono aqui ....">
-            </div>
-            <br>
-
-            <div>
                 <label for="fecha_nacimiento">Fecha Nac.(dd/mm/aaaa):</label>
                 <input type="date" name="fecha_nacimiento">
             </div>
-            <br>
 
-            <div>
-                <p>Género:
+            <div class="cajita"> Género:
+                <p>
                     <input type="radio" name="gender" value="hombre" checked>Hombre
                     <input type="radio" name="gender" value="Mujer">Mujer
                     <input type="radio" name="gender" value="No binario">No binario
                     <input type="radio" name="gender" value="Otro"> Otro
                 </p>
             </div>
-            <br>
 
-            <div>
-                <label for"lugar_residencia>Lugar de residencia:</label>
+
+            <div class="cajita">
+                <label for"lugar_residencia">Lugar de residencia:</label>
                 <select id="lugar_residencia" name="lugar_residencia">
                     <option>C.A.B.A</option>
                     <option>Buenos Aires</option>
@@ -111,29 +87,32 @@ ONG-->
                     <option>Exterior del país</option>
 
                 </select>
-
             </div>
 
-            <div>
+            <div class="cajita">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name:"email" placeholder="email@hdominio.com" required>
+            </div>
+
+            <div class="cajita">
+                <label for="telefono">Telefono: </label><input type="tel" name="telefono"
+                    placeholder="Ingrese su telefono aqui ....">
+            </div>
+
+
+            <div class="cajita">
                 <h4>Comentarios:</h4>
                 <label for="comentarios"></label>
-                <textarea name="comentarios" rows="10" cols="70"></textarea>
-                <br>
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
+                <textarea class="box" name="comentarios" rows="10" cols="70"></textarea>
             </div>
-
+            <p><input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </p>
 
         </fieldset>
 
-        <br><br>
-
-        <a href="index.html">Regresar al inicio</a>
-        <br>
-
-
     </form>
+    <section class="regresar"> <a  href="index.html">Regresar al inicio</a></section>
 </body>
 
 </html>
