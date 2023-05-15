@@ -32,9 +32,16 @@ fieldset {
     padding: 3%
 
 }
+
+.cajita1{
+    text-align:center;
+
+}
+
 .box{
     width: 100%;
 }
+
 label{
     max-width: 50%;
     min-width: none;
