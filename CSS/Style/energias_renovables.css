@@ -47,6 +47,15 @@ h3 {
     grid-column-end: 4;
 }
 
+.contenedor .nav {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
 .contenedor .contenido {
     grid-column: span 2;
     padding-top: 0%;
@@ -64,23 +73,28 @@ h3 {
     background-color: rgb(248, 204, 93);
     text-align: justify;
     padding-top: 15%;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-
     grid-row: span 2;
 }
 
 .contenedor .bloque1,
 .contenedor .bloque2 {
     background-color: rgb(250, 152, 112);
-    height: 310px;
+    height: 312px;
     text-align: justify;
     font-size: 14px;
+    padding-bottom: 50px;
+    padding-top: 40;
 }
 
 .contenedor .footer {
     background-color: rgb(232, 154, 51);
     height: 40px;
     grid-column: span 3;
+    text-decoration: none;
+    border-style: 2px, solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 15px 25px;
 }

@@ -1,3 +1,10 @@
+h1 {
+    color: darkgreen;
+    font-style: oblique;
+    text-shadow: black;
+    font-size: 45px;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -8,16 +15,27 @@ body {
     background-size: cover;
     font-size: 20px;
     font-family: 'Titan One', cursive;
+
 }
 
+.contenedor .header {
+    height: 50px;
+    text-align:center;
+  
+}
 
-.menu {
+.contenedor .menu {
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 180px;
+    align-content: center;
+    margin-top: 100px;
     row-gap: 30px;
+    text-align: center;
+
 }
+
 
 .s_n {
     display: flex;
@@ -83,3 +101,19 @@ body {
     border-style: 2px, solid;
     box-shadow: 6px 6px 5px #767373;
 }
+
+.contenedor .footer{
+    margin-top: 100px;
+    background-color:yellowgreen;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-style: 2px, solid;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width:1000px;
+         
+}
+
+
+  
