@@ -2,7 +2,34 @@ body {
     background-color: olive;
     background-image: url(../../HTML/img/fondo2.jpg);
     font-family: 'Alkatra', cursive;
+    padding: 0%;
 
+}
+
+@media screen and (max-width: 640px) {
+    .header.header {
+        background-image: url(../../HTML/img/fonfo\ co2.jpg);
+        color: brown;
+        background-color: antiquewhite;
+        font-family: 'Arial';
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .bloque1 {
+        text-align: justify;
+        font-family: 'Arial';
+        background-image: url(../../HTML/img/fondo\ claro\ 1.jpg);
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 940px) {
+    .contenedor.sidebar {
+        background-color: rgb(245, 170, 213);
+        font-family: 'Calibri';
+        background-image: url(../../HTML/img/fondo3.jpg);
+    }
 }
 
 h2 {
@@ -33,9 +60,9 @@ h3 {
 .contenedor .header,
 .contenedor .contenido,
 .contenedor .sidebar,
-.contenedor .footer {
+ {
 
-    padding: 20px;
+    padding: 10%;
     border-radius: 4px;
 }
 
@@ -55,8 +82,6 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .contenedor .sidebar {
@@ -77,10 +102,17 @@ h3 {
     height: 310px;
     text-align: justify;
     font-size: 14px;
+    padding: 1%;
 }
 
 .contenedor .footer {
     background-color: rgb(232, 154, 51);
     height: 40px;
     grid-column: span 3;
+    text-align: center;
+}
+
+.regresar {
+    text-align: center;
+    padding: 3%;
 }
