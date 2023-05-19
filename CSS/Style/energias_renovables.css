@@ -98,3 +98,36 @@ h3 {
     text-align: center;
     padding: 15px 25px;
 }
+
+@media screen and (max-width: 640px) {
+    .header.header {
+        background-color: darkgreen;
+        color: brown;
+        background-color: antiquewhite;
+        font-family: 'Arial';
+        text-align: center;
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .bloque1 {
+        text-align: justify;
+        font-family: 'Arial';
+        background-color: beige;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 940px) {
+    .sidebar {
+        background-color: rgb(245, 170, 213);
+        font-family: 'Calibri';
+       
+    }
+}
+
+
+
+
+
+
