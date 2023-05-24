@@ -31,90 +31,95 @@
 
     <form action="https://formspree.io/f/xjvdzoza" method="post" target="_blank">
 
-        <fieldset>
-            <legend>Datos personales</legend>
-            <div class="cajita">
-                <label for="nombre">Nombre:</label>
-                <input size="35" type="text" name:"nombre" placeholder="Ingrese su nombre aquí..." required>
-                <label for="apellido">Apellido:</label>
-                <input size="30" type="text" name:"apellido" placeholder="Ingrese su apellido aquí..." required>
-            </div>
+        <form id="formulario" onsubmit="return validarFormulario()" action="https://formspree.io/f/xjvdzoza"
+            method="post" target="_blank">
 
-            <div class="cajita">
-                <label for="dni">DNI:</label>
-                <input type="number" name:"dni" required>
-                <label for="fecha_nacimiento">Fecha Nac.(dd/mm/aaaa):</label>
-                <input type="date" name="fecha_nacimiento">
-            </div>
 
-            <div class="cajita"> Género:
-                <p>
-                    <input type="radio" name="gender" value="hombre" checked>Hombre
-                    <input type="radio" name="gender" value="Mujer">Mujer
-                    <input type="radio" name="gender" value="No binario">No binario
-                    <input type="radio" name="gender" value="Otro"> Otro
-                </p>
-            </div>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div class="cajita">
+                    <label for="nombre">Nombre:</label>
+                    <input size="40" type="text" id="mombre" name:"nombre" placeholder="Ingrese su nombre aquí..." required>
+                    <label for="apellido">Apellido:</label>
+                    <input size="30" type="text" id="apellido" name:"apellido" placeholder="Ingrese su apellido aquí..." required>
+                </div>
 
-            <div class="cajita">
-                <label for"lugar_residencia">Lugar de residencia:</label>
-                <select id="lugar_residencia" name="lugar_residencia">
-                    <option>C.A.B.A</option>
-                    <option>Buenos Aires</option>
-                    <option>Catamatca</option>
-                    <option>Chaco</option>
-                    <option>Chubut</option>
-                    <option>Córdoba</option>
-                    <option>Corrientes</option>
-                    <option>Entre Ríos</option>
-                    <option>Formosa</option>
-                    <option>Jujuy</option>
-                    <option>La Pampa</option>
-                    <option>La Rioja</option>
-                    <option>Mendoza</option>
-                    <option>Misiones</option>
-                    <option>Neuquén</option>
-                    <option>Río Negro</option>
-                    <option>Salta</option>
-                    <option>San Juan</option>
-                    <option>San Luis</option>
-                    <option>Santa Cruz</option>
-                    <option>Santa Fe</option>
-                    <option>Santiago del Estero</option>
-                    <option>Tierra del Fuego</option>
-                    <option>Tucumán</option>
-                    <option>Exterior del país</option>
+                <div class="cajita">
+                    <label for="dni">DNI:</label>
+                    <input type="number" name:"dni" required>
+                    <label for="fecha_nacimiento">Fecha Nac.(dd/mm/aaaa):</label>
+                    <input type="date" name="fecha_nacimiento">
+                </div>
 
-                </select>
-            </div>
+                <div class="cajita"> Género:
+                    <p>
+                        <input type="radio" name="gender" value="hombre" checked>Hombre
+                        <input type="radio" name="gender" value="Mujer">Mujer
+                        <input type="radio" name="gender" value="No binario">No binario
+                        <input type="radio" name="gender" value="Otro"> Otro
+                    </p>
+                </div>
 
-            <div class="cajita">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" name:"email" placeholder="email@dominio.com" required>
-            </div>
+                <div class="cajita">
+                    <label for"lugar_residencia">Lugar de residencia:</label>
+                    <select id="lugar_residencia" name="lugar_residencia">
+                        <option>C.A.B.A</option>
+                        <option>Buenos Aires</option>
+                        <option>Catamatca</option>
+                        <option>Chaco</option>
+                        <option>Chubut</option>
+                        <option>Córdoba</option>
+                        <option>Corrientes</option>
+                        <option>Entre Ríos</option>
+                        <option>Formosa</option>
+                        <option>Jujuy</option>
+                        <option>La Pampa</option>
+                        <option>La Rioja</option>
+                        <option>Mendoza</option>
+                        <option>Misiones</option>
+                        <option>Neuquén</option>
+                        <option>Río Negro</option>
+                        <option>Salta</option>
+                        <option>San Juan</option>
+                        <option>San Luis</option>
+                        <option>Santa Cruz</option>
+                        <option>Santa Fe</option>
+                        <option>Santiago del Estero</option>
+                        <option>Tierra del Fuego</option>
+                        <option>Tucumán</option>
+                        <option>Exterior del país</option>
 
-            <div class="cajita">
-                <label for="telefono">Telefono: </label><input type="tel" name="telefono"
-                    placeholder="Ingrese su telefono aqui ....">
-            </div>
+                    </select>
+                </div>
 
-            <div class="cajita">
-                <h4>Comentarios:</h4>
-                <label for="comentarios"></label>
-                <textarea class="box" name="comentarios" rows="10" cols="70"></textarea>
-            </div>
+                <div class="cajita">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name:"email" placeholder="email@dominio.com" required>
+                </div>
 
-            <div class="cajita1">
-                <p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                </p>
-            </div>
+                <div class="cajita">
+                    <label for="telefono">Telefono: </label><input type="tel" name="telefono"
+                        placeholder="Ingrese su telefono aqui ....">
+                </div>
 
-        </fieldset>
+                <div class="cajita">
+                    <h4>Comentarios:</h4>
+                    <label for="comentarios"></label>
+                    <textarea class="box" name="comentarios" rows="10" cols="70"></textarea>
+                </div>
 
-    </form>
-    <section class="regresar"> <a href="index.html">Regresar al inicio</a></section>
+                <div class="cajita1">
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </p>
+                </div>
+
+            </fieldset>
+
+        </form>
+        <section class="regresar"> <a href="index.html">Regresar al inicio</a></section>
+        <script src="../HTML/validacion.js"></script>
 </body>
 
 </html>
