@@ -100,34 +100,96 @@ h3 {
 }
 
 @media screen and (max-width: 640px) {
-    .header.header {
-        background-color: darkgreen;
-        color: brown;
-        background-color: antiquewhite;
-        font-family: 'Arial';
-        text-align: center;
-        padding: 2%;
+
+
+    .contenedor {
+        background-image: url(../../HTML/img/fondo\ claro\ 1.jpg);
+        max-width: auto;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
     }
+
+    .header,
+    .main,
+    .aside {
+        border-radius: 8%;
+        padding: 7%;
+        color: darkred;
+        background-color: antiquewhite;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-shadow: lightgreen;
+        text-align: center;
+    }
+
+    video {
+        width: 230px;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .bloque1,
+    .bloque2 {
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-y: scroll;
+    }
+
+    .regresar {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: double;
+    }
+
 }
 
-@media screen and (max-width: 840px) {
-    .bloque1 {
+@media screen and (max-width: 840px) and (min-width:641px) {
+    .contenedor {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 30%;
+        box-shadow: palevioletred;
+    }
+
+    .bloque1,
+    .bloque2 {
+        background-image: url(../../HTML/img/fondo\ claro\ 1.jpg);
         text-align: justify;
         font-family: 'Arial';
         background-color: beige;
+        overflow-y: scroll;
+    }
+
+    .regresar {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: double;
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 940px) {
+@media screen and (max-width: 1350px) and (min-width: 940px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .contenedor {
+        width: 100%;
+        border-radius: 3%;
+        box-shadow: #fff;
+        background-color: bisque;
+        padding: 0%;
+    }
+
     .sidebar {
+        background-image: url(../../HTML/img/fondo\ claro\ 1.jpg);
         background-color: rgb(245, 170, 213);
         font-family: 'Calibri';
-       
+    }
+
+    .regresar {
+        text-align: center;
+        margin-left: 20´px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: double;
     }
 }
-
-
-
-
-
-
