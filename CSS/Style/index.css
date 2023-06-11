@@ -18,10 +18,27 @@ body {
 
 }
 
+#temp {
+
+    font-size: 16px;
+    align-items: end;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+
+
+}
+
+.contenedor .tiempo {
+
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
 .contenedor .header {
     height: 50px;
-    text-align:center;
-  
+    text-align: center;
+
 }
 
 .contenedor .menu {
@@ -102,18 +119,16 @@ body {
     box-shadow: 6px 6px 5px #767373;
 }
 
-.contenedor .footer{
+.contenedor .footer {
     margin-top: 100px;
-    background-color:yellowgreen;
+    background-color: yellowgreen;
     padding: 15px 25px;
     text-decoration: none;
     border-style: 2px, solid;
     display: flex;
     justify-content: space-around;
-    align-items:center;
-    width:1000px;
-         
+    align-items: center;
+    width: 1000px;
+
 }
 
-
-  
