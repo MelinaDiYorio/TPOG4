@@ -111,3 +111,29 @@ h3 {
     padding: 15px 25px;
 
 }
+
+/* Celular */
+@media screen and (max-width:600px) {
+    body{
+        background-color:darkolivegreen;
+    }
+
+    .contenedor .header{
+        font-size: 13px;
+    }
+    
+      
+}
+
+/* Tablets */
+@media screen and (min-width:600px) and (max-width:850px) {
+    body{
+        background-color:olive;
+    }
+
+    h1{
+        font-style: italic;
+
+    }
+    
+}
